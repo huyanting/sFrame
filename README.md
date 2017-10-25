@@ -74,23 +74,3 @@ npm run all
 ```
 npm run build
 ```
-
-- 测试
-
-软连接，需要把node_modules软连接到项目根目录下
-
-```
-ln -s <<node_path>>/lib/node_modules node_modules
-pm2 kill web;
-NODE_ENV=testing pm2 start ./app/index.js --name web;
-```
-
-- 线上
-
-软连接，需要把node_modules软连接到项目根目录下
-
-```
-ln -s <<node_path>>/lib/node_modules node_modules
-pm2 kill web;
-NODE_ENV=production pm2 start ./app/index.js --name web;
-```
