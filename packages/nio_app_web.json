@@ -1,0 +1,21 @@
+{
+    "default_parameters": {
+        "dest_base_path": "/data/app/hyting_resource/"
+    },
+    "package_conf": {
+        "package_name": "hyting_resource",
+        "scm": "git_new",
+        "include_paths": ["app"],
+        "exclude_paths": ["assets"]
+    },
+    "install_conf": {
+        "link": [
+            {
+                "src": "app",
+                "dest": "$(dest_base_path)"
+            }
+        ]
+    },
+    "start": "cd $(dest_base_path) && sh scripts/start.sh $(ENV_TYPE)",
+    "stop": "cd $(dest_base_path) && sh scripts/stop.sh"
+}

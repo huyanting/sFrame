@@ -1,0 +1,7 @@
+test_report
+.vscode
+dist/css
+dist/js
+version.json
+server/i18n/sql.json
+!node_modules

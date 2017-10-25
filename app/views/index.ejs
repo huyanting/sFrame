@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Cache-Control" content="no-siteapp" />
+        <meta http-equiv="Cache-Control" content="no-transform" />
+        <meta name="renderer" content="webkit">
+        <meta name="description" content="本网站为个人网站，不许用作其他商用用途，最终解释权归本人所有">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title>hyting</title>
+        <script type="text/javascript" src="/dist/js/3rdParty.vendor-<%= version %>.js"></script>
+    </head>
+    <body class="<%= locals.previewClass || "" %>">
+        <%- include("./pages/" + viewName) %>
+    </body>
+</html>

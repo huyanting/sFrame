@@ -1,0 +1,5 @@
+//此处添加服务器端通用配置项
+{
+    "successResponseStatusCode": 200, // 服务正常时返回状态
+    "invalidResponseStatusCode": 500, // 无效请求返回状态
+}

@@ -1,0 +1,2 @@
+Object.freeze($context);
+module.exports = $context;

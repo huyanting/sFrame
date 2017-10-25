@@ -1,0 +1,5 @@
+// 开发环境配置项，当NODE_ENV为dev时加载
+{
+    "port": 8021, // node服务启动端口
+    "apiHost": ""
+}
