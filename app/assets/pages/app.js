@@ -1,5 +1,5 @@
 /* ************************************************************************
-*  <copyright file="worldMap_middleware.js" company="hyting>
+*  <copyright file="app.js" hyting>
 *  Copyright (c) 2010, 2016 All Right Reserved, http://www.yantinghu.com
 *
 *  THIS CODE AND INFORMATION ARE PROVIDED "AS IS" WITHOUT WARRANTY OF ANY
@@ -9,13 +9,8 @@
 *  </copyright>
 *  ***********************************************************************/
 
-const util = require('util');
-const utils = require('../utils');
+require('bootstrap');
+require('bootstrap/dist/css/bootstrap.css');
 
-exports.register = (app, serverConfigs, express) => {
-    app.use('/worldMap', (request, response) => {
-        response.render('index', {
-            viewName: 'worldMap'
-        });
-    });
-};
+require('../core/$core.scss');
+require('app.scss');

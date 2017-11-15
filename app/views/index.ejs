@@ -8,10 +8,21 @@
         <meta name="renderer" content="webkit">
         <meta name="description" content="本网站为个人网站，不许用作其他商用用途，最终解释权归本人所有">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" type="text/css" href="/dist/css/app-<%= version %>.css">        
         <title>hyting</title>
         <script type="text/javascript" src="/dist/js/3rdParty.vendor-<%= version %>.js"></script>
+        <script type="text/javascript" src="/dist/js/app-<%= version %>.js"></script>
+        <style type="text/css">
+            .backgroundImg {
+                width: 100%;
+                height: 100%;
+                background: url('/dist/imgs/bg.jpg') no-repeat;
+                background-size: cover;
+            }
+        </style>
     </head>
     <body class="<%= locals.previewClass || "" %>">
+        <%- include("./pages/header") %>
         <%- include("./pages/" + viewName) %>
     </body>
 </html>

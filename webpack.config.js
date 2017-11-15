@@ -31,7 +31,7 @@ if (nodeEnv == 'dev') {
 module.exports = {
     context: assetsPath,
     entry: {
-        'worldMap': ['./pages/worldMap'],
+        'app': ['./pages/app'],
         '3rdParty.vendor': [
             'babel-polyfill',
             'jquery'

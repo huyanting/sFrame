@@ -43,6 +43,6 @@ const vendor = require('./server/vendor');
 vendor.init(serverConfigs);
 
 // please note the order of middlewares is very IMPORTANT! Never mess it up unless you know clearly what you are doing.
-['demo', 'api', 'template', 'worldMap', 'static', 'default'].forEach(middleware => require(util.format('./server/express_middlewares/%s_middleware', middleware)).register(app, serverConfigs, express));
+['demo', 'api', 'template', 'static', 'default'].forEach(middleware => require(util.format('./server/express_middlewares/%s_middleware', middleware)).register(app, serverConfigs, express));
 
 app.listen(process.env.NODE_PORT || serverConfigs.port);
