@@ -1,3 +1,7 @@
+## Description
+#sFrame
+sFrame提供一个开源构建项目的解决方案，是在同样开源的框架中提取出来的，主要采用node + webpack + bootstrap的组装方式，目的是自己记录以及对他人的提供便捷，不可用于任何商业用途，最终解释权归本人所有。
+
 ## Development Environment Setup
 
 #Note: window需要管理员身份执行下述脚本，下述以linux(mac)为例，其他系统可参考该方法。
