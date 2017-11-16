@@ -83,5 +83,5 @@ npm run build
 - 编译时log4j配置报错如“Error: Problem reading log4js config...”
 ```
 log4j配置默认日志输出路径为/data/nodelog/log，
-请配置sFrame/app/vendor.js,修改log4js.configure中appenders属性的filename属性
+请配置sFrame/app/server/vendor.js,修改log4js.configure中appenders属性的filename属性
 ```

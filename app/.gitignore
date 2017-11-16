@@ -1,6 +1,8 @@
 test_report
 .vscode
-dist/*
+dist/js
+dist/css
+dist/*.svg
 version.json
 server/i18n/sql.json
 !node_modules
